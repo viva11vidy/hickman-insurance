@@ -537,7 +537,7 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
 /* ---------- Core coverage carousel ---------- */
 .coverage-viewport {
   /* clip slides on the left/right, but leave room for the notch dot + hover lift */
-  clip-path: inset(-20px -10px -20px 0);
+  clip-path: inset(-20px -10px -50px 0);
 }
 .coverage-track {
   display: flex;
