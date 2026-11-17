@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jennifer Hickman Insurance Agency | Texas Home, Auto, Commercial &amp; Life Insurance</title>
+  <meta name="description" content="Texas-tough coverage backed by award-winning service. Auto, home, life, specialty and commercial insurance from a local San Antonio team protecting South Texas since 2009.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Jennifer Hickman Insurance Agency home">
+        <img class="logo-mark" src="assets/images/main-logo.png" alt="" width="63" height="65" aria-hidden="true">
+        <span class="logo-text">
+          <span class="logo-name">Jennifer Hickman</span>
+          <span class="logo-sub">Insurance Agency</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Auto</a></li>
+          <li><a href="#">Speciality</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">Life</a></li>
+        </ul>
+        <a href="tel:2108908740" class="btn btn-red btn-phone nav-mobile-phone">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740
+        </a>
+      </nav>
+
+      <a href="tel:2108908740" class="btn btn-red btn-phone header-phone">
+        <svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="quote">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Texas-Tough Coverage, Backed By Award-<span class="text-red">Winning Service.</span></h1>
+          <p class="hero-text">Auto, home, life, specialty and commercial insurance from a local team that has protected South Texas families and businesses since 2009. Real people, honest advice and coverage built around your life.</p>
+          <div class="btn-group">
+            <a href="#quote" class="btn btn-red btn-lg">Get A Free Quote</a>
+            <a href="tel:2108908740" class="btn btn-outline btn-lg">(210) 890-8740</a>
+          </div>
+          <p class="hero-awards">🏆 Readers' Choice Best Insurance Agency · ⭐ #1 Customer Experience Agency Nationwide · 🎖 Presidents Council: Top 1% of Farmers Agents</p>
+        </div>
+
+        <div class="quote-card">
+          <h2 class="quote-title">Request your quote</h2>
+          <p class="quote-sub">Tell us what you want to protect, and we'll do the shopping.</p>
+
+          <form class="quote-form" id="quoteForm" novalidate>
+            <div class="quote-types" role="radiogroup" aria-label="Insurance type">
+              <button type="button" class="type-btn active" data-type="Auto" role="radio" aria-checked="true">Auto</button>
+              <button type="button" class="type-btn" data-type="Home" role="radio" aria-checked="false">Home</button>
+              <button type="button" class="type-btn" data-type="Life" role="radio" aria-checked="false">Life</button>
+              <button type="button" class="type-btn" data-type="Business" role="radio" aria-checked="false">Business</button>
+              <button type="button" class="type-btn" data-type="Other" role="radio" aria-checked="false">Other</button>
+            </div>
+            <input type="hidden" name="type" id="quoteType" value="Auto">
+
+            <input class="field" type="text" name="name" placeholder="Your Name*" aria-label="Your name" required>
+            <input class="field" type="email" name="email" placeholder="Email Address*" aria-label="Email address" required>
+            <div class="field-row">
+              <input class="field" type="tel" name="phone" placeholder="Phone number*" aria-label="Phone number" required>
+              <input class="field" type="text" name="zip" placeholder="ZIP code*" aria-label="ZIP code" inputmode="numeric" maxlength="5" required>
+            </div>
+            <div class="select-wrap">
+              <select class="field" name="contact" aria-label="How should we contact you?" required>
+                <option value="" selected disabled>How should we contact you? (Call / Text / Email)</option>
+                <option>Call</option>
+                <option>Text</option>
+                <option>Email</option>
+              </select>
+            </div>
+            <textarea class="field" name="message" rows="3" placeholder="Anything you’d like us to know? (Optional)" aria-label="Message"></textarea>
+
+            <label class="check">
+              <input type="checkbox" name="agree" required>
+              <span>I agree that Jennifer Hickman Insurance Agency may contact me by phone, text or email about this insurance request.</span>
+            </label>
+
+            <button type="submit" class="btn btn-red btn-block btn-lg btn-shadow">Submit Quote Request</button>
+            <p class="form-note">Takes about 2 minutes. No obligation, no pressure.</p>
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <img class="hero-strip" src="assets/images/banner-image.png" alt="Jennifer Hickman Insurance Agency office in San Antonio" width="2160" height="492">
+    </section>
+
+    <!-- ================= PRIORITIES BAR ================= -->
+    <section class="priorities">
+      <div class="container priorities-inner">
+        <h2 class="priorities-title">Your Priorities, Our Commitment</h2>
+        <ul class="priorities-tabs">
+          <li><a href="#" class="active">Business</a></li>
+          <li><a href="#">Property</a></li>
+          <li><a href="#">Personal</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US (AWARDS) ================= -->
+    <section class="why section">
+      <div class="container why-grid">
+        <img class="why-media" src="assets/images/reader-choice-award.png" alt="2026 San Antonio Express-News Readers' Choice Awards" width="819" height="689" loading="lazy">
+        <div class="why-content">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2 class="section-title">Local People. Real Service. Real Solutions.</h2>
+          <p class="lead">We believe insurance is a relationship, not a transaction — and our clients have noticed.</p>
+
+          <div class="why-awards">
+            <div class="awards-track" id="awardsTrack">
+              <div class="award">
+                <svg class="award-icon" viewBox="0 0 24 24"><use href="#i-award"/></svg>
+                <div>
+                  <span class="award-kicker">San Antonio Express-News</span>
+                  <h3 class="award-title">Readers' Choice — Best Insurance Agency</h3>
+                  <p>Voted Best Insurance Agency in the San Antonio Express-News Readers' Choice Awards — chosen by the community we serve.</p>
+                </div>
+              </div>
+              <div class="award">
+                <svg class="award-icon" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+                <div>
+                  <span class="award-kicker">National Recognition · 2025</span>
+                  <h3 class="award-title">#1 In Customer Experience</h3>
+                  <p>Recognized as the nation's #1 agent for customer experience in 2025 — the result of treating every client like a neighbor, not a policy number.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="carousel-controls">
+            <button class="ctrl-arrow" id="awardsPrev" aria-label="Previous award">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
+            </button>
+            <div class="carousel-dots" id="awardsDots" role="tablist" aria-label="Choose award"></div>
+            <button class="ctrl-arrow" id="awardsNext" aria-label="Next award">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CORE COVERAGE (CAROUSEL) ================= -->
+    <section class="about section">
+      <div class="container">
+        <div class="about-head">
+          <div>
+            <span class="eyebrow">Core Coverage</span>
+            <h2 class="section-title">One Agency.<br>Coverage For All Of It.</h2>
+          </div>
+          <div class="about-side">
+            <p class="lead about-lead">As a multi-line agency, we protect what matters most: at home, on the road, at work and everywhere in between.</p>
+            <div class="slider-arrows coverage-arrows">
+              <button class="arrow arrow-dark" id="coveragePrev" aria-label="Previous coverage">
+                <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
+              </button>
+              <button class="arrow arrow-navy" id="coverageNext" aria-label="Next coverage">
+                <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="coverage-viewport">
+          <div class="coverage-track" id="coverageTrack">
+            <div class="coverage-card notch-card">
+              <span class="coverage-icon">
+                <img src="assets/images/lucide/home.svg" alt="Home Icon" />
+              </span>
+              <span class="notch-dot" aria-hidden="true"></span>
+              <h3>Home</h3>
+              <p>Protect your home, your belongings and your peace of mind from Texas storms and life's surprises.</p>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="coverage-card notch-card">
+              <span class="coverage-icon">
+                <img src="assets/images/lucide/auto.svg" alt="Auto Icon" />
+              </span>
+              <span class="notch-dot" aria-hidden="true"></span>
+              <h3>Auto</h3>
+              <p>Smart coverage for daily drives and Texas road trips, with discounts that keep more money in your pocket.</p>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="coverage-card notch-card">
+              <span class="coverage-icon">
+                <img src="assets/images/lucide/renters.svg" alt="Renters Icon" />
+              </span>
+              <span class="notch-dot" aria-hidden="true"></span>
+              <h3>Renters</h3>
+              <p>Affordable coverage for your belongings and liability, starting for less than you'd think.</p>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="coverage-card notch-card">
+              <span class="coverage-icon">
+                <img src="assets/images/lucide/life.svg" alt="Life Icon" />
+              </span>
+              <span class="notch-dot" aria-hidden="true"></span>
+              <h3>Life</h3>
+              <p>Term, whole and universal life plans that keep your family secure, whatever tomorrow brings.</p>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="coverage-card notch-card">
+              <span class="coverage-icon">
+                <img src="assets/images/lucide/umbrella.svg" alt="Umbrella Icon" />
+              </span>
+              <span class="notch-dot" aria-hidden="true"></span>
+              <h3>Umbrella</h3>
+              <p>Extra liability protection above your home and auto limits, so one accident can't cost you everything.</p>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <!-- <div class="coverage-card notch-card">
+              <span class="coverage-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-anchor"/></svg></span>
+              <span class="notch-dot" aria-hidden="true"></span>
+              <h3>Specialty</h3>
+              <p>Motorcycle, boat, RV and off-road coverage for the things you love, with savings when you bundle.</p>
+              <a href="#" class="learn-more">Learn More</a>
+            </div> -->
+          </div>
+        </div>
+        
+        <div class="services-head">
+          <div class="slider-arrows">
+            <button class="arrow arrow-light" id="servicesPrev" aria-label="Previous coverage">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
+            </button>
+            <button class="arrow arrow-navy" id="servicesNext" aria-label="Next coverage">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>
+            </button>
+          </div>
+          <div class="services-intro">
+            <span class="eyebrow">Specialty Coverage</span>
+            <h2 class="section-title">Insurance For Everything Else You Love.</h2>
+            <p class="lead">From the boat at the lake to the rental down the street, we cover the things standard policies don't.</p>
+          </div>
+        </div>
+
+        <div class="services-viewport">
+          <div class="services-track" id="servicesTrack">
+            <article class="service-card active" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/business-and-commercial.png" alt="Business & Commercial Icon" />
+              </div>
+              <div class="service-body">
+                <h3>Business &amp; Commercial</h3>
+                <p>General Liability and Commercial Property coverage for retail shops, restaurants, offices, medical practices, warehouses and nonprofits.</p>
+              </div>
+            </article>
+            <article class="service-card" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/condo.png" alt="Condo Icon" />
+              </div>
+              <div class="service-body">
+                <h3>Condo</h3>
+                <p>Covers your unit, upgrades and belongings, filling the gaps your HOA policy leaves behind.</p>
+              </div>
+            </article>
+            <article class="service-card" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/motorcycle.png" alt="Motorcycle Icon" />
+              </div>
+              <div class="service-body">
+                <h3>Motorcycle</h3>
+                <p>Ride with confidence, with coverage for your bike, your gear and the open road.</p>
+              </div>
+            </article>
+            <article class="service-card" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/mobile-home.png" alt="Mobile Home & RV Icon" />
+              </div>
+              <div class="service-body">
+                <h3>Mobile Home &amp; RV</h3>
+                <p>Protection for the home you live in and the one you travel in.</p>
+              </div>
+            </article>
+            <article class="service-card" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/boat.png" alt="Boat & Watercraft Icon" />
+              </div>
+              <div class="service-body">
+                <h3>Boat &amp; Watercraft</h3>
+                <p>Coverage for boats, jet skis and lake days, on the water and on the trailer.</p>
+              </div>
+            </article>
+            <article class="service-card" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/landlord.png" alt="Landlord Icon" />
+              </div>
+              <div class="service-body">
+                <h3>Landlord</h3>
+                <p>Protect your rental property and income from damage, liability and lost rent.</p>
+              </div>
+            </article>
+            <article class="service-card" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/flood.png" alt="Flood & Earthquake Icon" />
+              </div>
+              <div class="service-body">
+                <h3>Flood & Earthquake</h3>
+                <p>Standard home policies don't cover floods or earthquakes. This does.</p>
+              </div>
+            </article>
+            <article class="service-card" tabindex="0">
+              <div class="service-img">
+                <img src="assets/images/mortgage.png" alt="Mortgage Protection" />
+              </div>
+              <div class="service-body">
+                <h3>Mortgage Protection</h3>
+                <p>Make sure your family keeps the home if the unexpected happens. No medical exam required.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMERCIAL PROPERTIES ================= -->
+    <section class="commercial section">
+      <div class="container commercial-grid">
+        <div class="commercial-content">
+          <h2 class="section-title">Commercial Properties Are Complex. <span class="text-red">Your Insurance Doesn't Have To Be.</span></h2>
+          <p class="commercial-text">Some coverage is required by law, and some by your lease or lender. We cut through the complexity so you get the right type and amount of coverage, with no gaps that leave you exposed when it matters most.</p>
+          <h3 class="protect-title">We Protect:</h3>
+          <p class="protect-list">Strip Centers · Retail Spaces · Office Buildings · Medical Facilities · Restaurant Spaces · Warehouses</p>
+        </div>
+        <img class="commercial-media" src="assets/images/commercial-property.png" alt="Commercial property insured by the agency" width="663" height="876" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ================= COMMERCIAL COVERAGE CARDS ================= -->
+    <section class="biz-coverage">
+      <div class="container">
+        <div class="biz-grid" id="bizGrid">
+          <div class="biz-card notch-card">
+            <span class="notch-dot" aria-hidden="true"></span>
+            <span class="biz-img img-placeholder" aria-hidden="true">
+              <img src="assets/images/property.png" alt="Property Coverage" />
+            </span>
+            <span class="biz-num">01</span>
+            <h3>Property Coverage</h3>
+            <p>Pays for damage from fire, vandalism and other covered events.</p>
+          </div>
+          <div class="biz-card notch-card active">
+            <span class="notch-dot" aria-hidden="true"></span>
+            <span class="biz-img img-placeholder" aria-hidden="true">
+              <img src="assets/images/equipment.png" alt="Equipment Breakdown" />
+            </span>
+            <span class="biz-num">02</span>
+            <h3>Equipment Breakdown</h3>
+            <p>Covers repairs and lost income when key equipment fails.</p>
+          </div>
+          <div class="biz-card notch-card">
+            <span class="notch-dot" aria-hidden="true"></span>
+            <span class="biz-img img-placeholder" aria-hidden="true">
+              <img src="assets/images/business-income.png" alt="Business Income" />
+            </span>
+            <span class="biz-num">03</span>
+            <h3>Business Income</h3>
+            <p>Replaces lost profits while your space is being repaired.</p>
+          </div>
+          <div class="biz-card notch-card">
+            <span class="notch-dot" aria-hidden="true"></span>
+            <span class="biz-img img-placeholder" aria-hidden="true">
+              <img src="assets/images/general-liability.png" alt="General Liability" />
+            </span>
+            <span class="biz-num">04</span>
+            <h3>General Liability</h3>
+            <p>Helps cover lawsuits and claims from injuries on your premises.</p>
+          </div>
+          <div class="biz-card notch-card">
+            <span class="notch-dot" aria-hidden="true"></span>
+            <span class="biz-img img-placeholder" aria-hidden="true">
+              <img src="assets/images/tenants.png" alt="Tenants &amp; Betterments" />
+            </span>
+            <span class="biz-num">05</span>
+            <h3>Tenants &amp; Betterments</h3>
+            <p>Protects the improvements tenants make to your building.</p>
+          </div>
+          <div class="biz-card notch-card">
+            <span class="notch-dot" aria-hidden="true"></span>
+            <span class="biz-img img-placeholder" aria-hidden="true">
+              <img src="assets/images/cyber.png" alt="Cyber Liability" />
+            </span>
+            <span class="biz-num">06</span>
+            <h3>Cyber Liability</h3>
+            <p>Helps you respond to data breaches, notify customers and protect your reputation.</p>
+          </div>
+        </div>
+
+        <div class="biz-footer">
+          <div>
+            <p>Quick claims, less stress · Keeps tenants lease- and lender-compliant · Safeguards rental income · Responsive support from real people with real answers</p>
+            <a href="#quote" class="btn btn-red">Get A Commercial Quote</a>
+          </div>
+          <h2 class="section-title biz-title">Why Property <br/><span class="text-red">Owners Choose Us</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MORTGAGE PROTECTION ================= -->
+    <section class="mortgage section">
+      <div class="container">
+        <div class="mortgage-head">
+          <div>
+            <span class="eyebrow">Mortgage Protection</span>
+            <h2 class="section-title">If You Don't Come Home, <span class="text-red">Who Pays The Mortgage?</span></h2>
+          </div>
+          <p class="mortgage-lead">Mortgage Protection Insurance pays off your home if you or your spouse pass away unexpectedly, so your family never has to worry about losing the house.</p>
+        </div>
+
+        <div class="mortgage-grid">
+          <div class="mortgage-media">
+            <img class="cover-img" src="assets/images/mortgage-protection-1.png" alt="Family protected by mortgage protection insurance" loading="lazy">
+            <p class="mortgage-caption">Sample Monthly Premium For A $250,000, 10-Year Term Policy, Female Ages 20–25, Elite Rating. Your Rate Depends On Age, Health And Coverage Selected.</p>
+          </div>
+
+          <div class="mortgage-side">
+            <div class="mortgage-img">
+              <img class="cover-img" src="assets/images/mortgage-protection-2.png" alt="Home covered by mortgage protection" loading="lazy">
+              <span class="price-badge">Plans From Just $13.10/Month*</span>
+            </div>
+            <ul class="check-list">
+              <li>No medical exam required</li>
+              <li>Benefit paid to your family, not the lender</li>
+              <li>Level premiums with 10, 20, and 30-year terms</li>
+              <li>Guaranteed renewal and conversion options</li>
+              <li>The benefit can exceed your mortgage balance and be used for anything</li>
+            </ul>
+            <a href="#quote" class="btn btn-red btn-lg">Check My Rate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MEET JENNIFER ================= -->
+    <section class="meet">
+      <div class="meet-icon">
+        <img src="assets/images/meet-jennifer-logo.png" alt="Meet Jennifer Hickman" width="360" height="360" loading="lazy">
+      </div>
+      <div class="container meet-grid">
+        <div class="meet-content">
+          <span class="eyebrow">Meet Jennifer</span>
+          <h2 class="section-title">A Real Person. A Local <span class="text-red">Agent In Your Corner.</span></h2>
+          <p>When you call the Jennifer Hickman Insurance Agency, you reach a real person, not a call center. We shop your coverage, explain your options in plain language and stay with you at claim time.</p>
+          <p>Jennifer has built one of the top-performing Farmers agencies in the nation since 2009. She is a Presidents Council agent (top 1% nationwide), and her agency was named the #1 Customer Experience Agency in the country. Her team takes pride in educating clients, spotting coverage gaps and helping you make informed decisions.</p>
+          <p>Outside the office, Jennifer gives back to the community and spends time with her family right here in San Antonio.</p>
+          <div class="btn-group">
+            <a href="#quote" class="btn btn-red btn-lg">Get A Free Quote</a>
+            <a href="tel:2108908740" class="btn btn-outline btn-lg">(210) 890-8740</a>
+          </div>
+        </div>
+        <div class="meet-media"><img src="assets/images/jennifer.png" alt="Jennifer Hickman, agency owner" width="488" height="779" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- ================= OUR PROMISE ================= -->
+    <section class="promise section">
+      <div class="container">
+        <div class="promise-head">
+          <div class="badge-wrap">
+            <svg class="badge-ring" viewBox="0 0 240 240" aria-hidden="true">
+              <defs>
+                <path id="badgeCircle" d="M120,120 m-92,0 a92,92 0 1,1 184,0 a92,92 0 1,1 -184,0"/>
+              </defs>
+              <text>
+                <textPath href="#badgeCircle" textLength="570">MORE ABOUT US · MORE ABOUT US ·</textPath>
+              </text>
+            </svg>
+            <span class="badge-center"><img class="badge-logo" src="assets/images/main-logo.png" alt="Jennifer Hickman Insurance Agency" width="63" height="65"></span>
+          </div>
+          <div class="promise-intro">
+            <span class="eyebrow">Why Choose Us</span>
+            <h2 class="section-title">A Nationally Recognized Team With <span class="text-red">Hometown Attention.</span></h2>
+            <p class="lead">We pair the expertise of a top-ranked agency with the personal care of a neighbor down the street.</p>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <img class="feature-img" src="assets/images/local-personal.png" alt="Local and personal service" width="360" height="229" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-top">
+                <h3>Local &amp; Personal</h3>
+                <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+              </div>
+              <p>Two offices, in San Antonio and Universal City, serving South Texas families and businesses since 2009.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <img class="feature-img" src="assets/images/all-yor-insurance.png" alt="All your insurance in one place" width="360" height="229" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-top">
+                <h3>All Your Insurance, One Place</h3>
+                <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+              </div>
+              <p>Bundle home, auto, life and business with one agent, one call and more savings.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <img class="feature-img" src="assets/images/award-winning-service.png" alt="Award-winning service" width="360" height="229" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-top">
+                <h3>Award-Winning Service</h3>
+                <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+              </div>
+              <p>Readers' Choice Best Insurance Agency and #1 in customer experience: honest, knowledgeable and reliable.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <img class="feature-img" src="assets/images/no-gaps.png" alt="No gaps, no surprises" width="360" height="229" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-top">
+                <h3>No Gaps, No Surprises</h3>
+                <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+              </div>
+              <p>We review your coverage line by line, so you know exactly what's protected before you need it.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <img class="feature-img" src="assets/images/quick-claims.png" alt="Quick claims, less stress" width="360" height="229" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-top">
+                <h3>Quick Claims, Less Stress</h3>
+                <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+              </div>
+              <p>When something goes wrong, we step in fast, so you're never stuck in the middle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials">
+      <div class="container testi-grid">
+        <div class="testi-head">
+          <span class="eyebrow">Our Testimonials</span>
+          <h2 class="section-title">What <span class="text-red">Our Client Say?</span></h2>
+          <div class="slider-arrows testi-arrows">
+            <button class="arrow arrow-ring" id="testiPrev" aria-label="Previous testimonial">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
+            </button>
+            <button class="arrow arrow-ring" id="testiNext" aria-label="Next testimonial">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="testi-viewport">
+          <div class="testi-track" id="testiTrack">
+            <article class="testi-card active">
+              <div class="testi-top">
+                <svg class="quote-mark" viewBox="0 0 64 36" aria-hidden="true"><use href="#i-quote"/></svg>
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <p>Exceptional experience working with Jennifer Hickman and her team. Everyone is attentive and sense of urgency is always present!</p>
+              <h3 class="testi-name">Miguel Salinas</h3>
+            </article>
+            <article class="testi-card">
+              <div class="testi-top">
+                <svg class="quote-mark" viewBox="0 0 64 36" aria-hidden="true"><use href="#i-quote"/></svg>
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <p>Christeena did a fantastic job for me lowering my insurance premiums. She saved me almost half of my premium with discounts and I was very pleased. Thanks again Christeena.</p>
+              <h3 class="testi-name">Kenneth Rodriguez</h3>
+            </article>
+            <article class="testi-card">
+              <div class="testi-top">
+                <svg class="quote-mark" viewBox="0 0 64 36" aria-hidden="true"><use href="#i-quote"/></svg>
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <!-- TODO: full review text is cut off in the design — replace with the real review -->
+              <p>I was very happy with the team who helped me with my auto insurance. They were knowledgeable and made the process easy. I will definitely recommend them for my any insurance needs in the future.</p>
+              <h3 class="testi-name">王明士</h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SAVINGS ================= -->
+    <section class="savings section">
+      <div class="container">
+        <div class="savings-intro">
+          <span class="eyebrow">More Ways to Save</span>
+          <h2 class="section-title">Maximize Your Savings With <span class="text-red">The Jennifer Hickman Agency</span></h2>
+          <p>We're committed to finding you the best coverage and value, with competitive options and a wide range of discounts</p>
+        </div>
+
+        <div class="savings-list" id="savingsList">
+          <div class="saving active">
+            <button class="saving-num" aria-expanded="true">01</button>
+            <div class="saving-body">
+              <h3><button class="saving-toggle">Policy Bundling &amp; Loyalty Perks</button></h3>
+              <p>Bundle home and auto to save. New Farmers Flex Personal Home policies earn a Welcome Discount, and staying claim-free for two-plus years earns a Loyalty Discount. You'll also get a Declining Deductible that drops $50 each year your policy is active, plus Claim Forgiveness after five claim-free years.</p>
+              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+            </div>
+          </div>
+          <div class="saving">
+            <button class="saving-num" aria-expanded="false">02</button>
+            <div class="saving-body">
+              <h3><button class="saving-toggle">Occupational &amp; Professional Discounts</button></h3>
+              <!-- TODO: text is cut off in the design — confirm the full copy -->
+              <p>Exclusive rate reductions for members, employees and retirees of qualifying professional associations and occupations, such as educators, first responders, military and healthcare workers.</p>
+              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+            </div>
+          </div>
+          <div class="saving">
+            <button class="saving-num" aria-expanded="false">03</button>
+            <div class="saving-body">
+              <h3><button class="saving-toggle">Homeowner &amp; Property Safety Rewards</button></h3>
+              <!-- TODO: text is cut off in the design — confirm the full copy -->
+              <p>Unlock Home Buyer Discounts when you insure with us at the time of your home purchase, and save more with protective devices like alarms, smoke detectors and impact-resistant roofs.</p>
+              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+            </div>
+          </div>
+          <div class="saving">
+            <button class="saving-num" aria-expanded="false">04</button>
+            <div class="saving-body">
+              <h3><button class="saving-toggle">Commercial &amp; Real Estate Savings</button></h3>
+              <p>We compare multiple carriers to find the best coverage and value for your industry. Property managers and landlords can earn Multiple Property Discounts: the more properties you insure, the more you save on rental property insurance.</p>
+              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= READY TO TALK ================= -->
+    <section class="talk">
+      <div class="container talk-grid">
+        <div class="talk-content">
+          <h2 class="talk-title">Ready To Talk?</h2>
+          <p>Call or text during business hours, or request a quote anytime.</p>
+          <a href="tel:2108908740" class="talk-phone">(210) 890-8740</a>
+          <p class="talk-email"><a href="mailto:info@hickmaninsured.com">info@hickmaninsured.com</a> · Open Monday–Friday, 8:30 AM – 5:30 PM</p>
+          <div class="offices">
+            <div>
+              <h3>San Antonio</h3>
+              <p>14526 Jones Maltsberger Rd, Suite 102<br>San Antonio, TX 78247</p>
+              <p class="office-phone"><a href="tel:2105451414">(210) 545-1414</a></p>
+            </div>
+            <div>
+              <h3>Universal City</h3>
+              <p>2117 Pat Booker Rd, Suite B<br>Universal City, TX 78148</p>
+              <p class="office-phone"><a href="tel:2109454500">(210) 945-4500</a></p>
+            </div>
+          </div>
+          <a href="#quote" class="btn btn-red btn-lg">Get A Free Quote</a>
+        </div>
+        <img class="talk-media" src="assets/images/ready-to-talk.png" alt="Building blocks representing insurance coverage" width="643" height="602" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq section">
+      <div class="container faq-grid">
+        <h2 class="section-title faq-title">Frequently Asked <span class="text-red">Questions</span></h2>
+
+        <div class="faq-list" id="faqList">
+          <div class="faq-item open">
+            <button class="faq-q" aria-expanded="true">
+              Will I reach a real person?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Yes. When you call (210) 890-8740, you speak directly with Jennifer Hickman's local team in San Antonio and Universal City, not an overseas call center. Whether you need an ID card, a coverage explanation or help with a claim, we're right here.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can you shop my coverage?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Absolutely. We'll review your current policies, compare options and show you where you can save or where you may have gaps, at no cost and with no obligation.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can I save by bundling?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Usually, yes. Combining home, auto, life or business policies often unlocks multi-policy discounts, and it means one agent handles everything.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              What kinds of insurance do you offer?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>Auto, home, life (term, whole and universal), umbrella, renters, condo, motorcycle, mobile home and RV, boat and watercraft, landlord, flood and earthquake, mortgage protection business and commercial insurance.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Not sure which policy you need?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a"><p>That's what we're here for. Tell us about your life, home or business, and we'll recommend the coverage that fits, explained in plain English.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2 class="cta-title">Let's Get You A Quote.</h2>
+        <p>It takes two minutes. Tell us what you need and we'll do the shopping.</p>
+        <a href="#quote" class="btn btn-red btn-lg">Get A Free Quote</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img class="logo-mark" src="assets/images/main-logo.png" alt="" width="63" height="65" aria-hidden="true">
+          <span class="logo-text">
+            <span class="logo-name">Jennifer Hickman</span>
+            <span class="logo-sub">Insurance Agency</span>
+          </span>
+        </a>
+        <p>Jennifer Hickman Insurance Agency</p>
+        <p><a href="tel:2108908740">(210) 890-8740</a></p>
+        <p><a href="mailto:info@hickmaninsured.com">info@hickmaninsured.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Messaging Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Coverage</h3>
+        <ul>
+          <li><a href="#">Home &amp; Auto</a></li>
+          <li><a href="#">Specialty</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">Life</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>San Antonio</h3>
+        <p class="footer-addr">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
+          <span>14526 Jones Maltsberger Rd, Suite 102<br>San Antonio, TX 78247<br><a href="tel:2105451414">(210) 545-1414</a></span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Universal City</h3>
+        <p class="footer-addr">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
+          <span>2117 Pat Booker Rd, Suite B<br>Universal City, TX 78148<br><a href="tel:2109454500">(210) 945-4500</a></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Jennifer Hickman Insurance Agency. All rights reserved. Jennifer Hickman Insurance Agency is a licensed multi-line insurance agency. Coverage is subject to policy terms, conditions, and availability. By providing your phone number you agree to our Privacy Policy and Messaging Terms.</p>
+    </div>
+  </footer>
+
+  <!-- ================= SVG ICON SPRITE ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 21v-4h6v4M8 7h.01M12 7h.01M16 7h.01M8 11h.01M12 11h.01M16 11h.01"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+    <symbol id="i-anchor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5V21M5 12H2a10 10 0 0 0 20 0h-3M8 11h8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13l5 6L21 4"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 64 36"><path d="M12 0h18L18 36H0zM44 0h18L50 36H32z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
