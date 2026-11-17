@@ -1343,7 +1343,14 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
   grid-template-columns: 364px 219px 219px 264px 1fr;
   max-width: 1272px;
 }
-.footer-brand .logo { margin-bottom: 26px; }
+.footer-brand .logo {
+  display: inline-flex;
+  margin-bottom: 26px;
+  transition: transform 0.3s ease;
+}
+.footer-brand .logo:hover {
+  transform: translateY(-2px);
+}
 .footer-brand .logo-mark { width: 40px; height: 40px; }
 .footer-brand p {
   font-family: var(--font-head);
@@ -1353,22 +1360,49 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
   margin-bottom: 20px;
   letter-spacing: -0.02em;
 }
-.footer-brand a:hover { color: #c9d4ff; }
+.footer-brand a {
+  display: inline-block;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.footer-brand a:hover {
+  color: #c9d4ff;
+  transform: translateX(3px);
+}
 
 .footer-col h3 {
   font-family: var(--font-head);
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 26px;
+  position: relative;
+  display: inline-block;
+}
+.footer-col h3::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+.footer-col:hover h3::after {
+  width: 32px;
 }
 .footer-col li { margin-bottom: 12px; }
 .footer-col a {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.02em;
-  transition: color .2s;
+  display: inline-block;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
-.footer-col a:hover { color: var(--red); }
+.footer-col a:hover {
+  color: var(--red);
+  transform: translateX(5px);
+}
 .footer-addr {
   display: flex;
   gap: 14px;
@@ -1377,8 +1411,25 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
   line-height: 24px;
   letter-spacing: -0.02em;
 }
-.footer-addr .icon { width: 20px; height: 20px; margin-top: 2px; }
-.footer-addr a:hover { color: var(--red); }
+.footer-addr .icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer-addr:hover .icon {
+  transform: translateY(-2px) scale(1.1);
+  color: var(--red);
+}
+.footer-addr a {
+  display: inline-block;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.footer-addr a:hover {
+  color: var(--red);
+  transform: translateX(3px);
+}
 
 .footer-bottom {
   max-width: 1272px;

@@ -746,6 +746,44 @@
           },
         });
       }
+
+      // 15. FOOTER ENTRANCE
+      if ($(".site-footer")) {
+        const footerTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".site-footer",
+            start: "top 88%",
+            toggleActions: "play none none none",
+          },
+          defaults: { ease: "power3.out" },
+        });
+
+        footerTl
+          .from(".footer-brand", {
+            opacity: 0,
+            y: 35,
+            duration: 0.85,
+          })
+          .from(
+            ".footer-col",
+            {
+              opacity: 0,
+              y: 30,
+              stagger: 0.12,
+              duration: 0.8,
+            },
+            "-=0.6"
+          )
+          .from(
+            ".footer-bottom",
+            {
+              opacity: 0,
+              y: 20,
+              duration: 0.75,
+            },
+            "-=0.4"
+          );
+      }
     }
   }
 })();
