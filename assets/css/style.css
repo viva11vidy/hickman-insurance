@@ -147,6 +147,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   z-index: 100;
   background: var(--navy);
   color: var(--white);
+  --animate-duration: 0.8s;
 }
 
 .header-inner {
