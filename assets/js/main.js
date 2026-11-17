@@ -346,4 +346,406 @@
       live: true,
     }).init();
   }
+
+  /* =========================================================
+     GSAP & SCROLLTRIGGER PROFESSIONAL ANIMATIONS
+     ========================================================= */
+  if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!prefersReducedMotion) {
+      // 1. HERO ENTRANCE (Runs smoothly on page load)
+      const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      if ($(".hero-title")) {
+        heroTl.from(".hero-title", { opacity: 0, y: 35, duration: 0.9 })
+              .from(".hero-text", { opacity: 0, y: 25, duration: 0.8 }, "-=0.6")
+              .from(".hero .btn-group", { opacity: 0, y: 20, duration: 0.7 }, "-=0.5")
+              .from(".hero-awards", { opacity: 0, y: 15, duration: 0.7 }, "-=0.4")
+              .from(".quote-card", { opacity: 0, y: 40, scale: 0.96, duration: 0.9 }, "-=0.8");
+      }
+
+      // Hero background strip subtle parallax
+      if ($(".hero-strip")) {
+        gsap.to(".hero-strip", {
+          yPercent: 12,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".hero",
+            start: "top top",
+            end: "bottom top",
+            scrub: 0.5,
+          },
+        });
+      }
+
+      // 2. PRIORITIES BAR
+      if ($(".priorities")) {
+        gsap.from(".priorities .container", {
+          opacity: 0,
+          y: 20,
+          duration: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".priorities",
+            start: "top 90%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 3. WHY CHOOSE US
+      if ($(".why")) {
+        gsap.from(".why-media", {
+          opacity: 0,
+          x: -40,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".why",
+            start: "top 75%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from([".why-content .eyebrow", ".why-content .section-title", ".why-content .lead", ".why-awards"], {
+          opacity: 0,
+          y: 30,
+          stagger: 0.12,
+          duration: 0.85,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".why-content",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 4. CORE COVERAGE CARDS
+      if ($(".about")) {
+        gsap.from(".about-head", {
+          opacity: 0,
+          y: 30,
+          duration: 0.85,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".about-head",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".coverage-card", {
+          opacity: 0,
+          y: 40,
+          stagger: 0.1,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".coverage-track",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 5. SPECIALTY COVERAGE SLIDER
+      if ($(".services-head")) {
+        gsap.from(".services-head", {
+          opacity: 0,
+          y: 30,
+          duration: 0.85,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".services-head",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+      if ($(".services-viewport")) {
+        gsap.from(".service-card", {
+          opacity: 0,
+          x: 40,
+          stagger: 0.08,
+          duration: 0.85,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".services-viewport",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 6. COMMERCIAL PROPERTIES & BIZ GRID
+      if ($(".commercial")) {
+        gsap.from(".commercial-content > *", {
+          opacity: 0,
+          y: 25,
+          stagger: 0.1,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".commercial-grid",
+            start: "top 75%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".commercial-media", {
+          opacity: 0,
+          scale: 0.95,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".commercial-grid",
+            start: "top 75%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+      if ($(".biz-coverage")) {
+        gsap.from(".biz-title", {
+          opacity: 0,
+          y: 25,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".biz-coverage",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".biz-card", {
+          opacity: 0,
+          y: 35,
+          stagger: 0.08,
+          duration: 0.75,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".biz-grid",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 7. MORTGAGE PROTECTION
+      if ($(".mortgage")) {
+        gsap.from(".mortgage-head", {
+          opacity: 0,
+          y: 25,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".mortgage-head",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from([".mortgage-media", ".mortgage-img"], {
+          opacity: 0,
+          y: 35,
+          stagger: 0.15,
+          duration: 0.9,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".mortgage-grid",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 8. MEET JENNIFER HICKMAN
+      if ($(".meet")) {
+        gsap.from(".meet-content > *", {
+          opacity: 0,
+          y: 25,
+          stagger: 0.1,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".meet-grid",
+            start: "top 75%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".meet-media img", {
+          opacity: 0,
+          y: 50,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".meet-grid",
+            start: "top 75%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 9. OUR PROMISE & FEATURES
+      if ($(".promise")) {
+        gsap.from(".promise-head", {
+          opacity: 0,
+          y: 25,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".promise-head",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".badge-wrap", {
+          opacity: 0,
+          scale: 0.7,
+          rotation: -45,
+          duration: 1,
+          ease: "back.out(1.4)",
+          scrollTrigger: {
+            trigger: ".promise-head",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".feature", {
+          opacity: 0,
+          y: 30,
+          stagger: 0.12,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".promise-features",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 10. TESTIMONIALS
+      if ($(".testimonials")) {
+        gsap.from(".testi-head", {
+          opacity: 0,
+          y: 25,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".testimonials",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".testi-card", {
+          opacity: 0,
+          y: 35,
+          stagger: 0.1,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: "#testiTrack",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 11. SAVINGS ACCORDION CASCADE
+      if ($(".savings")) {
+        gsap.from(".savings-intro", {
+          opacity: 0,
+          y: 25,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".savings-intro",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".saving", {
+          opacity: 0,
+          y: 30,
+          stagger: 0.1,
+          duration: 0.7,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".savings-list",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 12. READY TO TALK?
+      if ($(".talk")) {
+        gsap.from(".talk-content > *", {
+          opacity: 0,
+          y: 20,
+          stagger: 0.08,
+          duration: 0.75,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".talk-grid",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".talk-media", {
+          opacity: 0,
+          scale: 0.95,
+          duration: 0.9,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".talk-grid",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 13. FAQ ACCORDION
+      if ($(".faq")) {
+        gsap.from(".faq-title", {
+          opacity: 0,
+          y: 25,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".faq-title",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.from(".faq-item", {
+          opacity: 0,
+          y: 20,
+          stagger: 0.08,
+          duration: 0.65,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: "#faqList",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+
+      // 14. BOTTOM CTA BANNER
+      if ($(".cta")) {
+        gsap.from([".cta-title", ".cta p", ".cta .btn"], {
+          opacity: 0,
+          y: 25,
+          stagger: 0.12,
+          duration: 0.85,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".cta",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+    }
+  }
 })();
