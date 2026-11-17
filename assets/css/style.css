@@ -536,8 +536,9 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
 
 /* ---------- Core coverage carousel ---------- */
 .coverage-viewport {
-  /* clip slides on the left/right, but leave room for the notch dot + hover lift */
-  clip-path: inset(-20px -10px -50px 0);
+  /* clip slides on the left/right, leaving ample margin for hover lift, notch dot, and learn more */
+  clip-path: inset(-20px -10px -60px 0);
+  padding-bottom: 8px;
 }
 .coverage-track {
   display: flex;
@@ -552,9 +553,10 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
   min-width: 0;
   display: flex;
   flex-direction: column;
-  min-height: 220px;
-  padding: 10px 12px 26px;
+  min-height: 230px;
+  padding: 10px 12px 24px;
   color: var(--navy);
+  cursor: pointer;
   transition: color .3s, transform .3s;
 }
 .coverage-card:hover { transform: translateY(-4px); }
@@ -565,18 +567,30 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
 
 .learn-more {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 14px;
   font-family: var(--font-head);
   font-size: 14px;
   font-weight: 600;
+  color: inherit;
   text-decoration: underline;
   text-underline-offset: 3px;
   opacity: 0;
-  transition: opacity .3s;
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity .3s, transform .2s;
 }
 .coverage-card.active .learn-more,
 .coverage-card:hover .learn-more,
-.learn-more:focus { opacity: 1; }
+.learn-more:focus {
+  opacity: 1;
+  pointer-events: auto;
+}
+.learn-more:hover {
+  transform: translateX(3px);
+}
 
 .coverage-icon {
   width: 45px; height: 45px;

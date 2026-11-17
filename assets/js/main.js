@@ -290,6 +290,32 @@
     highlight: true,
   });
 
+  const covTrack = $("#coverageTrack");
+  if (covTrack) {
+    covTrack.addEventListener("mouseover", (e) => {
+      const card = e.target.closest(".coverage-card");
+      if (card) {
+        const allCards = $$(".coverage-card", covTrack);
+        activateOne(allCards, card);
+      }
+    });
+
+    covTrack.addEventListener("click", (e) => {
+      const card = e.target.closest(".coverage-card");
+      if (card) {
+        const targetLink = e.target.closest("a");
+        if (targetLink && targetLink.getAttribute("href") && targetLink.getAttribute("href") !== "#") {
+          return; // Allow standard anchor navigation if specific link has an ID
+        }
+        e.preventDefault();
+        const quoteEl = $("#quote");
+        if (quoteEl) {
+          quoteEl.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+  }
+
   /* ---------- Awards carousel (Why Choose Us) ---------- */
   initLoopCarousel({
     track: $("#awardsTrack"),
