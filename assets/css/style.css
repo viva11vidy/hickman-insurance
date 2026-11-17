@@ -1515,7 +1515,9 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
   .quote-card { padding: 22px 18px; }
   .quote-types { grid-template-columns: repeat(3, 1fr); gap: 10px; }
   .field-row { grid-template-columns: 1fr; }
-  .hero-strip { height: 200px; margin-top: -80px; }
+  .hero-strip {         height: 200px;
+        margin-top: 20px;
+        object-position: left; }
 
   .priorities-tabs { gap: 28px; }
   .priorities-title { font-size: 17px; }
