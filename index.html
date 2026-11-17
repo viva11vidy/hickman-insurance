@@ -5,6 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jennifer Hickman Insurance Agency | Texas Home, Auto, Commercial &amp; Life Insurance</title>
   <meta name="description" content="Texas-tough coverage backed by award-winning service. Auto, home, life, specialty and commercial insurance from a local San Antonio team protecting South Texas since 2009.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#002f87">
+  <link rel="canonical" href="https://hickmaninsured.com/">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jennifer Hickman Insurance Agency | San Antonio &amp; Universal City, TX">
+  <meta property="og:description" content="Auto, home, life, specialty, and commercial insurance from a local team protecting San Antonio and South Texas families since 2009. Call (210) 890-8740.">
+  <meta property="og:url" content="https://hickmaninsured.com/">
+  <meta property="og:site_name" content="Jennifer Hickman Insurance Agency">
+  <meta property="og:image" content="https://hickmaninsured.com/assets/images/banner-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jennifer Hickman Insurance Agency | Texas Insurance">
+  <meta name="twitter:description" content="Auto, home, life, specialty, and commercial insurance from a local San Antonio team. Real people, honest advice.">
+  <meta name="twitter:image" content="https://hickmaninsured.com/assets/images/banner-image.png">
+
+  <!-- JSON-LD LocalBusiness / InsuranceAgency Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Jennifer Hickman Insurance Agency",
+    "image": "https://hickmaninsured.com/assets/images/banner-image.png",
+    "logo": "https://hickmaninsured.com/assets/images/main-logo.png",
+    "@id": "https://hickmaninsured.com/#agency",
+    "url": "https://hickmaninsured.com/",
+    "telephone": "+12108908740",
+    "email": "info@hickmaninsured.com",
+    "priceRange": "$$",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "14526 Jones Maltsberger Rd, Suite 102",
+        "addressLocality": "San Antonio",
+        "addressRegion": "TX",
+        "postalCode": "78247",
+        "addressCountry": "US"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "2117 Pat Booker Rd, Suite B",
+        "addressLocality": "Universal City",
+        "addressRegion": "TX",
+        "postalCode": "78148",
+        "addressCountry": "US"
+      }
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 29.5746,
+      "longitude": -98.4716
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "17:30"
+      }
+    ],
+    "areaServed": [
+      "San Antonio",
+      "Universal City",
+      "Bexar County",
+      "Texas"
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +104,11 @@
 
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Auto</a></li>
-          <li><a href="#">Speciality</a></li>
-          <li><a href="#">Commercial</a></li>
-          <li><a href="#">Life</a></li>
+          <li><a href="#quote" class="active">Home</a></li>
+          <li><a href="#coverage">Auto</a></li>
+          <li><a href="#specialty">Specialty</a></li>
+          <li><a href="#commercial">Commercial</a></li>
+          <li><a href="#life">Life</a></li>
         </ul>
         <a href="tel:2108908740" class="btn btn-red btn-phone nav-mobile-phone">
           <svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740
@@ -164,7 +241,7 @@
     </section>
 
     <!-- ================= CORE COVERAGE (CAROUSEL) ================= -->
-    <section class="about section">
+    <section class="about section" id="coverage">
       <div class="container">
         <div class="about-head">
           <div>
@@ -241,7 +318,7 @@
           </div>
         </div>
         
-        <div class="services-head">
+        <div class="services-head" id="specialty">
           <div class="slider-arrows">
             <button class="arrow arrow-light" id="servicesPrev" aria-label="Previous coverage">
               <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
@@ -337,7 +414,7 @@
     </section>
 
     <!-- ================= COMMERCIAL PROPERTIES ================= -->
-    <section class="commercial section">
+    <section class="commercial section" id="commercial">
       <div class="container commercial-grid">
         <div class="commercial-content">
           <h2 class="section-title">Commercial Properties Are Complex. <span class="text-red">Your Insurance Doesn't Have To Be.</span></h2>
@@ -420,7 +497,7 @@
     </section>
 
     <!-- ================= MORTGAGE PROTECTION ================= -->
-    <section class="mortgage section">
+    <section class="mortgage section" id="life">
       <div class="container">
         <div class="mortgage-head">
           <div>
@@ -557,7 +634,7 @@
       <div class="container testi-grid">
         <div class="testi-head">
           <span class="eyebrow">Our Testimonials</span>
-          <h2 class="section-title">What <span class="text-red">Our Client Say?</span></h2>
+          <h2 class="section-title">What <span class="text-red">Our Clients Say</span></h2>
           <div class="slider-arrows testi-arrows">
             <button class="arrow arrow-ring" id="testiPrev" aria-label="Previous testimonial">
               <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
