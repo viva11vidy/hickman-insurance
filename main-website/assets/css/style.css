@@ -1530,6 +1530,11 @@ textarea.field { height: 75px; padding: 10px; resize: vertical; }
   text-align: center;
 }
 .footer-bottom p { font-size: 12px; line-height: 24px; color: #bdbdbd; }
+section {
+  max-width: 1700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 /* =========================================================
    RESPONSIVE

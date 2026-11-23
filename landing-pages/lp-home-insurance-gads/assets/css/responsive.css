@@ -1,0 +1,753 @@
+
+
+@media (max-width: 767.98px) { 
+    .bundle .default-btn.flex-right{
+        margin-top: 20px;
+    }
+.cta-icon-cell {
+    color: #fff;
+}
+.btn-call{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+    .banner-text {
+    font-size: 19px;
+}
+.form-div .default-btn {
+    padding: 15px 0;
+}
+    .heading-one {
+    font-size: 34px;
+}
+.text-one {
+font-size: 15px;
+}
+
+.banner-listing-point {
+    gap: 8px;
+    flex-direction: column;
+}
+ul.list-points {
+    gap: 8px;
+}
+.text-two {
+    font-size: 14px;
+}
+
+.check-mark {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.check-mark svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.list-points .text-two{
+    flex: 1;
+}
+
+.default-btn, .default-btn-two {
+    font-size: 14px;
+    padding: 15px 20px;
+    min-width: 221px;
+    max-height: 43px;
+}
+.center-btn {
+    gap: 10px;
+}
+.banner {
+    padding: 150px 0 100px;
+}
+.heading-flex {
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-wrapper {
+    padding: 25px;
+}
+.form-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+}
+
+.input-area::placeholder , .input-area  {
+    font-size: 14px;
+}
+.text-three {
+    font-size: 15px;
+}
+.input-area {
+    border-radius: 4px;
+    padding: 10px;
+}
+.padding {
+    padding: 60px 0;
+}
+.heding-two {
+    font-size: 25px;
+}
+.heading-two-subtext {
+    font-size: 19px;
+    line-height: 1;
+}
+.bg-red {
+    top: 14%;
+}
+.consultation-sec .mb-5{
+    margin-bottom: 20px !important;
+}
+.heading-four {
+    font-size: 20px;
+}
+.heading-three {
+    font-size: 20px;
+}
+.f-btn{
+    margin-bottom: 30px;
+}
+.blue-text {
+    text-align: center;
+    font-size: 19px;
+
+}
+.insurance .heding-two  {
+text-align: center;
+}
+.coverage-title {
+    font-size: 16px;
+    line-height: 1;
+}
+.coverage-num {
+    font-size: 20px;
+
+}
+.flex-right {
+    display: inline-block;
+    float: none;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+.i-img{
+    margin-top: 20px;
+}
+.reverse-row{
+    flex-direction: column-reverse;
+}
+.c-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.c-btn {
+    display: inline-block;
+    float: none;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+.steps {
+    margin-bottom: 20px;
+}
+.steps-row {
+    margin-bottom: auto;
+
+}
+.bundle-box {
+    min-height: 160px;
+}
+.s-card-text {
+    font-size: 19px;
+
+}
+.d-flexs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.bundle {
+    position: relative;
+    padding-top: 200px;
+}.round-img {
+    position: absolute;
+    max-width: 373px;
+    bottom: 0;
+}
+.agency{
+    overflow: hidden;
+}
+.heading-two-subtext-two {
+    font-size: 19px;
+    line-height: 1;
+}
+.insurance-agency-img {
+    transform: translateY(10px);
+}
+.feature-title {
+    font-size: 16px;
+
+}
+.p-div {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+}
+.nav-default-btn{
+    display: none;
+}
+.br-none br{
+    display: none;
+}
+.text-four {
+    font-size: 14px;
+}
+.sub-heding {
+    margin-bottom: 30px;
+}
+.sub-heding-small {
+    font-size: 25px;
+}
+.consultation-img{
+    display: none;
+}
+.consultation-card .heading-four {
+    padding: 10px 0 10px;
+}
+.consultation-card {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.consultation-sec{
+    padding-bottom: 30px;
+}
+.services .sub-heding{
+text-align: center;
+}
+.text-right {
+    text-align: center;
+}
+.service-slider{
+    margin-top: 30px;
+}
+.service-slider {
+    padding-left: 20px;
+    padding-bottom:0;
+}
+.owl-carousel .owl-dots {
+    width: 70%;
+    overflow: hidden;
+    justify-content: center;
+    margin: auto;
+}
+.service-slider .item {
+    min-height: 228px;
+}
+.questions-section .row{
+    flex-direction: column-reverse;
+}
+.img-wrapper-div {
+    padding-left:0;
+}
+.img-wrapper img {
+    width: 230px;
+    object-fit: cover;
+    height: 300px;
+}
+.questions-section .heding-two {
+    margin-bottom: 30px;
+}
+.div-flex {
+    gap: 12px;
+    flex-direction: column;
+}
+.wrapper {
+    padding-top: 12px;
+}
+.stamp-img {
+    left: 0;
+    max-width: 144px;
+    top: 19%;
+}
+.table-wrapper {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+.visa-table th {
+    padding-top: 0;
+}
+.visa-table th.category-header {
+    font-size: 15px;
+}
+.visa-table th.visa-header {
+    font-size: 12px;
+}
+.visa-table td.row-title, .visa-table td {
+    font-size: 12px;
+}
+.visa-table th, .visa-table td {
+    padding: 8px;
+}
+.visa-table th.visa-header {
+    font-weight: 600;
+}
+img.lady-justice-img {
+    max-width: 385px;
+    opacity: 0.2;
+}
+.point-heading {
+    font-size: 20px;
+    margin: 2px 0 20px;
+}
+.act-start .custom-padding{
+    padding-top: 0;
+}
+.act-start .heading-four {
+    min-height: auto;
+}
+.paper-work-wrapper {
+    padding: 35px 50px;
+    text-align: center;
+    min-height: 200px;
+}
+img.paper-work {
+    padding: 30px 0;
+}
+.about-legal-profession {
+    bottom: 37%;
+}
+.document-wrapper {
+    min-height: auto;
+}
+.grid-sec {
+    position: relative;
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    margin-top: 30px;
+    height: auto;
+}
+.text-right-div {
+    text-align: left;
+}
+.right-btn {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.grid-box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+}
+.single-card p {
+    font-size: 15px;
+}
+.single-card {
+    padding: 15px 20px;
+
+}
+.about-left {
+    padding-right: 0;
+}
+.feather-img {
+    top: 0%;
+}
+.tag-one img {
+    width: 100%;
+}
+.tag-one {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(-50% , -50%);
+    width: fit-content;
+    z-index: 99;
+    width: 98px;
+    padding-right: 0;
+}
+.about-right {
+    padding-left: 0;
+        margin-top: 30px;
+}
+.tag-two {
+    height: 120px;
+    width: 120px;
+    right: -6%;
+    bottom: -6px;
+}
+.tag-two p {
+    font-size: 35px;
+}
+.t-left , .t-right{
+    width: 100%;
+}
+.t-flex-div {
+    flex-direction: column;
+}
+
+.testimonial-slider .item {
+    padding: 20px;
+    min-height: 475px;
+}
+.testimonial-slider .owl-nav {
+    gap: 20px;
+    position: relative;
+    left: auto;
+    bottom: 0%;
+    justify-content: center;
+}
+.testimonial-slider .owl-nav button.owl-prev, .testimonial-slider .owl-nav button.owl-next {
+    width: 40px;
+    height: 40px;
+}
+.testimonial-slider .nav-arrow {
+    font-size: 19px;
+}
+section.faq {
+    padding-bottom: 60px;
+}
+img.bronze-statue-of-lady-justice {
+    max-width: 323px;
+    opacity: 0.2;
+}
+.footer {
+    padding: 60px 0;
+}
+.footer-text {
+    font-size: 14px;
+}
+.footer-authority-tag {
+    max-width: 110px;
+    margin-top: 20px;
+}
+.footer-heading {
+    margin-bottom: 13px;
+    margin-top: 20px;
+}
+.contact-info {
+    transform: none;
+    z-index: 9;
+    position: relative;
+    left: auto;
+    width: 90%;
+}
+.contact {
+    background-size: cover;
+    min-height: 330px;
+    height: 420px;
+}
+.info-inner {
+    padding: 60px 25px;
+}
+section#service {
+    padding-top: 100px;
+}
+.t-name {
+    font-size: 25px;
+}
+.service-slider .owl-nav {
+    position: absolute;
+    top: auto;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.faq .row{
+    flex-direction: column-reverse;
+}
+.copy-write {
+    padding-bottom: 0;
+}
+.footer-list {
+    gap: 10px;
+}
+.feature-img {
+    max-width: 100%;
+}
+.bg-red {
+    height: 250px;
+    width: 250px;
+
+}
+.stack-title {
+    font-size: 22px;
+
+}
+.f-div {
+    margin-bottom: 5px;
+}
+.feature-point  {
+    margin-top: 0 !important;
+}
+.stack-card {
+    display: block;
+    padding: 40px 0;
+    height: 100%;
+    min-height: 100%;
+    margin-bottom: 30px;
+    top: -300px;
+}
+.stack-num {
+    font-size: 22px;
+}
+.stack-stage {
+    margin-top: 0;
+    height: auto !important;
+    overflow: visible;
+}
+.feature-img{
+margin-top: 10px;
+}
+nav.nav-top {
+    padding: 15px 0;
+}
+ }
+
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .heading-one {
+    font-size: 40px;
+}
+.text-one {
+    font-size: 20px;
+}
+ .br-none br{
+    display: none;
+}
+.banner {
+    padding: 200px 0 180px;
+}
+.flex-div {
+    gap: 10px;
+}
+.heding-two {
+    color: #11233B;
+    font-family: "Crimson Pro";
+    font-size: 35px;
+}
+img.consultation-img {
+    opacity: 0.4;
+}
+.icon img{
+height: 60px;
+}
+.consultation-card .heading-four {
+    min-height: 80px;
+}
+.service-slider{
+    margin-top: 30px;
+}
+.service-slider {
+    padding-bottom: 60px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.padding {
+    padding: 80px 0;
+}
+.feather-img {
+    top: 0%;
+}
+.img-wrapper img {
+    width: 75%;
+    object-fit: cover;
+    height: 80%;
+}
+.img-wrapper-div {
+    padding-left: 30px;
+}
+.stamp-img {
+    left: 0;
+    max-width: 200px;
+    top: 13%;
+}
+.table-wrapper {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.visa-table th, .visa-table td {
+    padding: 20px 25px;
+}
+img.lady-justice-img {
+    opacity: 0.8;
+    max-width: 500px;
+}
+.p-work-div {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.paper-work{
+    display: none;
+}
+.paper-work-wrapper {
+    width: 100%;
+}
+section.document-section {
+    padding-top: 60px;
+}
+.document-wrapper {
+    padding: 23px 15px;
+    min-height: 282px;
+}
+.default-btn, .default-btn-two {
+    font-size: 16px;
+    padding: 15px 7px;
+    min-width: 230px;
+}
+.right-btn {
+    gap: 10px;
+}
+.single-card p {
+    font-size: 16px;
+}
+.single-card {
+    padding: 16px 10px;
+}
+.icon-box {
+    height: 40px;
+    width: 40px;
+}
+.icon-box img{
+width: 20px;
+}
+.about-right {
+    padding-left: 0;
+}
+.tag-one img {
+    width: 100px;
+}
+.tag-two {
+    height: 100px;
+    width: 100px;
+    right: -5%;
+}
+.tag-two p {
+    font-size: 26px;
+}
+.tag-one {
+    top: 21%;
+}
+.about-left {
+    padding-right: 0;
+}
+.t-left .heding-two {
+    text-align: center;
+}
+img.bronze-statue-of-lady-justice {
+    max-width: 500px;
+    opacity: 0.5;
+}
+img.footer-authority-tag {
+    max-width: 140px;
+}
+
+.banner-text {
+    font-size: 30px;
+}
+.list-points .text-two{
+flex: 1;
+}
+.div-box{
+  margin-top: 30px;
+}
+.div-box .col-md-6.mb-5{
+    margin-bottom: 0 !important;
+  
+}
+.coverage-title {
+    font-size: 18px;
+}
+.s-text {
+    margin-bottom: 20px;
+    min-height: 113px;
+}
+.s-num {
+    margin-bottom: 20px;
+}
+.s-card-text {
+    font-size: 19px;
+
+}
+.text-four {
+    font-size: 15px;
+
+}
+section.bundle.padding {
+    padding-top: 140px;
+}
+.b-text-one {
+    font-size: 15px;
+}
+.round-img {
+    right: 0;
+    z-index: 2;
+    width: 330px;
+    bottom: 0;
+}
+section.agency {
+    padding: 60px 0;
+}
+.insurance-agency-img {
+    transform: translateY(32%);
+}
+.contact {
+    background-size: cover;
+    min-height: 490px;
+}
+.info-inner {
+    padding: 60px;
+}
+section#service {
+    padding-top: 140px;
+}
+.service-slider .owl-nav {
+    top: -19%;
+}
+.t-name {
+    font-size: 25px;
+
+}
+.owl-carousel .owl-dots {
+    width: 80%;
+    margin-top: 28px;
+    margin: auto;
+    margin-top: 30px;
+}
+.footer-text {
+    font-size: 14px;
+
+}
+.footer-logo {
+    max-width: 200px;
+}
+.stack-card {
+    top: -200px;
+
+    margin-bottom: 0;
+}
+.stack-title {
+    font-size: 30px;
+
+}
+  }
+
+
+   @media (min-width: 992px) and (max-width: 1399.98px) {
+    .br-none br{
+        display: none;
+    }
+   }
