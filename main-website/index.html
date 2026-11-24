@@ -19,7 +19,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jennifer Hickman Insurance Agency | San Antonio &amp; Universal City, TX">
-  <meta property="og:description" content="Auto, home, life, specialty, and commercial insurance from a local team protecting San Antonio and Texas families since 2009. Call (210) 890-8740.">
+  <meta property="og:description" content="Auto, home, life, specialty, and commercial insurance from a local team protecting San Antonio and Texas families since 2009. Call (210) 545-1414.">
   <meta property="og:url" content="https://hickmaninsured.com/">
   <meta property="og:site_name" content="Jennifer Hickman Insurance Agency">
   <meta property="og:image" content="https://hickmaninsured.com/assets/images/banner-image.png">
@@ -40,7 +40,7 @@
     "logo": "https://hickmaninsured.com/assets/images/main-logo.png",
     "@id": "https://hickmaninsured.com/#agency",
     "url": "https://hickmaninsured.com/",
-    "telephone": "+12108908740",
+    "telephone": "+12105451414",
     "email": "info@hickmaninsured.com",
     "priceRange": "$$",
     "address": [
@@ -90,7 +90,7 @@
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-  <link rel="stylesheet" href="assets/css/style.css?v=1.8">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.9">
 </head>
 <body>
 
@@ -107,19 +107,30 @@
 
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.6s"><a href="#quote" class="active">Home</a></li>
+          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.6s"><a href="#quote">Home</a></li>
           <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s"><a href="#coverage">Auto</a></li>
-          <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.6s"><a href="#specialty">Specialty</a></li>
+          <li class="has-dropdown wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.6s">
+            <a href="#specialty" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Speciality <svg class="nav-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+            <ul class="nav-dropdown">
+              <li><a href="#specialty">Condo</a></li>
+              <li><a href="#specialty">Motorcycle</a></li>
+              <li><a href="#specialty">Mobile Home &amp; RV</a></li>
+              <li><a href="#specialty">Boat &amp; Watercraft</a></li>
+              <li><a href="#specialty">Landlord</a></li>
+              <li><a href="#specialty">Flood &amp; Earthquake</a></li>
+              <li><a href="#life">Mortgage Protection</a></li>
+            </ul>
+          </li>
           <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s"><a href="#commercial">Commercial</a></li>
           <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.6s"><a href="#life">Life</a></li>
         </ul>
-        <a href="tel:2108908740" class="btn btn-red btn-phone nav-mobile-phone">
-          <svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740
+        <a href="tel:2105451414" class="btn btn-red btn-phone nav-mobile-phone">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 545-1414
         </a>
       </nav>
 
-      <a href="tel:2108908740" class="btn btn-red btn-phone header-phone wow animate__animated animate__fadeIn" data-wow-delay="0.6s" data-wow-duration="0.8s">
-        <svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740
+      <a href="tel:2105451414" class="btn btn-red btn-phone header-phone wow animate__animated animate__fadeIn" data-wow-delay="0.6s" data-wow-duration="0.8s">
+        <svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 545-1414
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
@@ -135,10 +146,10 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <h1 class="hero-title">Texas-Tough Coverage, Backed By Award-<span class="text-red">Winning Service.</span></h1>
-          <p class="hero-text">Auto, home, life, specialty and commercial insurance from a local team that has protected Texas families and businesses since 2009. Real people, honest advice and coverage built around your life.</p>
+          <p class="hero-text">Auto, home, life, specialty and commercial insurance from a local team that has protected South Texas families and businesses since 2009. Real people, honest advice and coverage built around your life.</p>
           <div class="btn-group">
             <a href="#quote" class="btn btn-red btn-lg">Get A Free Quote</a>
-            <a href="tel:2108908740" class="btn btn-outline btn-lg">(210) 890-8740</a>
+            <a href="tel:2105451414" class="btn btn-outline btn-lg">(210) 545-1414</a>
           </div>
           <p class="hero-awards">🏆 Readers' Choice Best Insurance Agency · ⭐ #1 Customer Experience Agency Nationwide · 🎖 Presidents Council: Top 1% of Farmers Agents</p>
         </div>
@@ -323,7 +334,7 @@
         
         <div class="services-head" id="specialty">
           <div class="slider-arrows">
-            <button class="arrow arrow-light" id="servicesPrev" aria-label="Previous coverage">
+            <button class="arrow arrow-dark" id="servicesPrev" aria-label="Previous coverage">
               <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
             </button>
             <button class="arrow arrow-navy" id="servicesNext" aria-label="Next coverage">
@@ -438,16 +449,14 @@
             <span class="biz-img img-placeholder" aria-hidden="true">
               <img src="assets/images/property.png" alt="Property Coverage" />
             </span>
-            <span class="biz-num">01</span>
             <h3>Property Coverage</h3>
             <p>Pays for damage from fire, vandalism and other covered events.</p>
           </div>
-          <div class="biz-card notch-card active">
+          <div class="biz-card notch-card">
             <span class="notch-dot" aria-hidden="true"></span>
             <span class="biz-img img-placeholder" aria-hidden="true">
               <img src="assets/images/equipment.png" alt="Equipment Breakdown" />
             </span>
-            <span class="biz-num">02</span>
             <h3>Equipment Breakdown</h3>
             <p>Covers repairs and lost income when key equipment fails.</p>
           </div>
@@ -456,7 +465,6 @@
             <span class="biz-img img-placeholder" aria-hidden="true">
               <img src="assets/images/business-income.png" alt="Business Income" />
             </span>
-            <span class="biz-num">03</span>
             <h3>Business Income</h3>
             <p>Replaces lost profits while your space is being repaired.</p>
           </div>
@@ -465,7 +473,6 @@
             <span class="biz-img img-placeholder" aria-hidden="true">
               <img src="assets/images/general-liability.png" alt="General Liability" />
             </span>
-            <span class="biz-num">04</span>
             <h3>General Liability</h3>
             <p>Helps cover lawsuits and claims from injuries on your premises.</p>
           </div>
@@ -474,7 +481,6 @@
             <span class="biz-img img-placeholder" aria-hidden="true">
               <img src="assets/images/tenants.png" alt="Tenants &amp; Betterments" />
             </span>
-            <span class="biz-num">05</span>
             <h3>Tenants &amp; Betterments</h3>
             <p>Protects the improvements tenants make to your building.</p>
           </div>
@@ -483,7 +489,6 @@
             <span class="biz-img img-placeholder" aria-hidden="true">
               <img src="assets/images/cyber.png" alt="Cyber Liability" />
             </span>
-            <span class="biz-num">06</span>
             <h3>Cyber Liability</h3>
             <p>Helps you respond to data breaches, notify customers and protect your reputation.</p>
           </div>
@@ -536,11 +541,12 @@
 
     <!-- ================= MEET JENNIFER ================= -->
     <section class="meet">
-      <div class="meet-icon">
-        <img src="assets/images/meet-jennifer-logo.png" alt="Meet Jennifer Hickman" width="360" height="360" loading="lazy">
-      </div>
       <div class="container meet-grid">
         <div class="meet-content">
+          <div class="meet-watermark" aria-hidden="true">
+            <img src="assets/images/meet-jennifer-logo.png" alt="" width="367" height="557" loading="lazy">
+            <span class="wm-text"><span class="wm-name">Jennifer Hickman</span><span class="wm-sub">Insurance Agency</span></span>
+          </div>
           <span class="eyebrow">Meet Jennifer</span>
           <h2 class="section-title">A Real Person. A Local <span class="text-red">Agent In Your Corner.</span></h2>
           <p>When you call the Jennifer Hickman Insurance Agency, you reach a real person, not a call center. We shop your coverage, explain your options in plain language and stay with you at claim time.</p>
@@ -548,7 +554,7 @@
           <p>Outside the office, Jennifer gives back to the community and spends time with her family right here in San Antonio.</p>
           <div class="btn-group">
             <a href="#quote" class="btn btn-red btn-lg">Get A Free Quote</a>
-            <a href="tel:2108908740" class="btn btn-outline btn-lg">(210) 890-8740</a>
+            <a href="tel:2105451414" class="btn btn-outline btn-lg">(210) 545-1414</a>
           </div>
         </div>
         <div class="meet-media"><img src="assets/images/jennifer.png" alt="Jennifer Hickman, agency owner" width="488" height="779" loading="lazy"></div>
@@ -647,9 +653,9 @@
       <div class="container testi-grid">
         <div class="testi-head">
           <span class="eyebrow">Our Testimonials</span>
-          <h2 class="section-title">What <span class="text-red">Our Clients Say</span></h2>
+          <h2 class="section-title">What <span class="text-red">Our Clients Say?</span></h2>
           <div class="slider-arrows testi-arrows">
-            <button class="arrow arrow-ring" id="testiPrev" aria-label="Previous testimonial">
+            <button class="arrow arrow-ring arrow-ring-muted" id="testiPrev" aria-label="Previous testimonial">
               <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-left"/></svg>
             </button>
             <button class="arrow arrow-ring" id="testiNext" aria-label="Next testimonial">
@@ -681,9 +687,26 @@
                 <svg class="quote-mark" viewBox="0 0 64 36" aria-hidden="true"><use href="#i-quote"/></svg>
                 <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
               </div>
-              <!-- TODO: full review text is cut off in the design — replace with the real review -->
-              <p>I was very happy with the team who helped me with my auto insurance. They were knowledgeable and made the process easy. I will definitely recommend them for my any insurance needs in the future.</p>
-              <h3 class="testi-name">王明士</h3>
+              <p>Had a great experience working with my agent. She was super responsive, answered all my questions, and made the whole process of switching homeowners insurance really smooth. She took the time to explain everything clearly and helped me get better coverage at a much better price than my previous policy. Definitely recommend if you're looking to save money and still have solid coverage.</p>
+              <h3 class="testi-name">Lucas Esparza</h3>
+            </article>
+
+            <article class="testi-card">
+              <div class="testi-top">
+                <svg class="quote-mark" viewBox="0 0 64 36" aria-hidden="true"><use href="#i-quote"/></svg>
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <p>After several years of receiving large increases from my former agency, I decided to shop all my home, auto and RV policies. I noticed The Jennifer Hickman Farmers Insurance sign while driving past her office and decided to give them a call. I am so glad I did!</p>
+              <h3 class="testi-name">JOEL EDWARDS</h3>
+            </article>
+
+            <article class="testi-card">
+              <div class="testi-top">
+                <svg class="quote-mark" viewBox="0 0 64 36" aria-hidden="true"><use href="#i-quote"/></svg>
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <p>This office is very professional, everyone from the receptionist to the agent. Whenever I've had a question they respond very quickly or return my call in a timely manner. I would highly recommend Farmers Insurance-Jennifer Hickman.</p>
+              <h3 class="testi-name">Dolores Gonzalez</h3>
             </article>
           </div>
         </div>
@@ -705,7 +728,7 @@
             <div class="saving-body">
               <h3><button class="saving-toggle">Policy Bundling &amp; Loyalty Perks</button></h3>
               <p>Bundle home and auto to save. New Farmers Flex Personal Home policies earn a Welcome Discount, and staying claim-free for two-plus years earns a Loyalty Discount. You'll also get a Declining Deductible that drops $50 each year your policy is active, plus Claim Forgiveness after five claim-free years.</p>
-              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+              <a href="tel:2105451414" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 545-1414</a>
             </div>
           </div>
           <div class="saving">
@@ -714,7 +737,7 @@
               <h3><button class="saving-toggle">Occupational &amp; Professional Discounts</button></h3>
               <!-- TODO: text is cut off in the design — confirm the full copy -->
               <p>Exclusive rate reductions for members, employees and retirees of qualifying professional associations and occupations, such as educators, first responders, military and healthcare workers.</p>
-              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+              <a href="tel:2105451414" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 545-1414</a>
             </div>
           </div>
           <div class="saving">
@@ -723,7 +746,7 @@
               <h3><button class="saving-toggle">Homeowner &amp; Property Safety Rewards</button></h3>
               <!-- TODO: text is cut off in the design — confirm the full copy -->
               <p>Unlock Home Buyer Discounts when you insure with us at the time of your home purchase, and save more with protective devices like alarms, smoke detectors and impact-resistant roofs.</p>
-              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+              <a href="tel:2105451414" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 545-1414</a>
             </div>
           </div>
           <div class="saving">
@@ -731,7 +754,7 @@
             <div class="saving-body">
               <h3><button class="saving-toggle">Commercial &amp; Real Estate Savings</button></h3>
               <p>We compare multiple carriers to find the best coverage and value for your industry. Property managers and landlords can earn Multiple Property Discounts: the more properties you insure, the more you save on rental property insurance.</p>
-              <a href="tel:2108908740" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 890-8740</a>
+              <a href="tel:2105451414" class="btn btn-red btn-phone btn-shadow"><svg class="icon" viewBox="0 0 24 24"><use href="#i-phone"/></svg>(210) 545-1414</a>
             </div>
           </div>
         </div>
@@ -744,7 +767,7 @@
         <div class="talk-content">
           <h2 class="talk-title">Ready To Talk?</h2>
           <p>Call or text during business hours, or request a quote anytime.</p>
-          <a href="tel:2108908740" class="talk-phone">(210) 890-8740</a>
+          <a href="tel:2105451414" class="talk-phone">(210) 545-1414</a>
           <p class="talk-email"><a href="mailto:info@hickmaninsured.com">info@hickmaninsured.com</a> · Open Monday–Friday, 8:30 AM – 5:30 PM</p>
           <div class="offices">
             <div>
@@ -775,7 +798,7 @@
               Will I reach a real person?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
-            <div class="faq-a"><p>Yes. When you call (210) 890-8740, you speak directly with Jennifer Hickman's local team in San Antonio and Universal City, not an overseas call center. Whether you need an ID card, a coverage explanation or help with a claim, we're right here.</p></div>
+            <div class="faq-a"><p>Yes. When you call (210) 545-1414, you speak directly with Jennifer Hickman's local team in San Antonio and Universal City, not an overseas call center. Whether you need an ID card, a coverage explanation or help with a claim, we're right here.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-q" aria-expanded="false">
@@ -832,7 +855,7 @@
           </span>
         </a>
         <p>Jennifer Hickman Insurance Agency</p>
-        <p><a href="tel:2108908740">(210) 890-8740</a></p>
+        <p><a href="tel:2105451414">(210) 545-1414</a></p>
         <p><a href="mailto:info@hickmaninsured.com">info@hickmaninsured.com</a></p>
       </div>
 
@@ -848,9 +871,10 @@
 
       <div class="footer-col">
         <h3>Coverage</h3>
-        <ul>
-          <li><a href="#">Home &amp; Auto</a></li>
-          <li><a href="#">Specialty</a></li>
+        <ul class="footer-list-tight">
+          <li><a href="#coverage">Home</a></li>
+          <li><a href="#coverage">Auto</a></li>
+          <li><a href="#specialty">Specialty</a></li>
           <li><a href="#">Commercial</a></li>
           <li><a href="#">Life</a></li>
         </ul>
@@ -860,7 +884,7 @@
         <h3>San Antonio</h3>
         <p class="footer-addr">
           <svg class="icon" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
-          <span>14526 Jones Maltsberger Rd, Suite 102<br>San Antonio, TX 78247<br><a href="tel:2105451414">(210) 545-1414</a></span>
+          <span>14526 Jones<br>Maltsberger Rd,<br>Suite 102<br>San Antonio, TX 78247<br><a href="tel:2105451414">(210) 545-1414</a></span>
         </p>
       </div>
 
@@ -868,7 +892,7 @@
         <h3>Universal City</h3>
         <p class="footer-addr">
           <svg class="icon" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
-          <span>2117 Pat Booker Rd, Suite B<br>Universal City, TX 78148<br><a href="tel:2109454500">(210) 945-4500</a></span>
+          <span>2117 Pat Booker Rd,<br>Suite B<br>Universal City, TX 78148<br><a href="tel:2109454500">(210) 945-4500</a></span>
         </p>
       </div>
     </div>
@@ -901,6 +925,6 @@
 
   <!-- WOW.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="assets/js/main.js?v=1.8"></script>
+  <script src="assets/js/main.js?v=1.9"></script>
 </body>
 </html>
